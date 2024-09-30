@@ -17,6 +17,8 @@ export default function Login() {
     try {
       const res = await newRequest.post("/auth/login", { username, password });
       localStorage.setItem("currentUser", JSON.stringify(res.data));
+      console.log(response.data); // Handle response data
+
       navigate("/")
     } catch (err) {
       setError(err)
