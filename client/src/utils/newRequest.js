@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const newRequest = axios.create({
-  baseURL: "https://fiveer-app.onrender.com/api/",
+  baseURL:"http://localhost:8000/api" || "https://fiveer-app.onrender.com/api/",
   withCredentials: true,
 });
 

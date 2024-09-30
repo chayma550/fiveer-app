@@ -29,8 +29,10 @@ const corsOptions = {
     origin: process.env.FRONTEND_URL || "http://localhost:3000", // Allow requests from your frontend
     credentials: true,
 };
-
-app.use(cors(corsOptions));
+app.use(cors({
+    origin: ['http://localhost:3000', 'https://fiveer-app.netlify.app'], // Allow both origins
+    credentials: true, // Allow cookies to be sent with requests
+  }));
 app.use(cookieParser());
 
 // Routes
@@ -50,6 +52,6 @@ app.use((err, req, res, next) => {
 });
 
 // Start the server
-app.listen(process.env.PORT || 8800, () => {
-    console.log("Server running on port " + (process.env.PORT || 8800));
+app.listen(process.env.PORT || 8000, () => {
+    console.log("Server running on port " + (process.env.PORT || 8000));
 });

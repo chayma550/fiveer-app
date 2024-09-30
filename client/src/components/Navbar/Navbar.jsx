@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./navbar.scss";
 import newRequest from "../../utils/newRequest"
+import noavatar from "../../img/noavatar.jpg"
 function Navbar() {
   
   const [active, setActive] = useState(false);
@@ -54,7 +55,7 @@ function Navbar() {
         {!currentUser&& <Link to="/login"><button >Join</button></Link>} 
         {currentUser&&(
           <div className="user" onClick={() => setOpen(!open)}>
-            <img src={currentUser.img || "/img/noavatar.jpg"} alt=""/>
+            <img src={currentUser.img ||{noavatar}} alt=""/>
             <span>{currentUser?.username}</span>
             {open&&(
               

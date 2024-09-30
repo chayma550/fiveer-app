@@ -4,6 +4,7 @@ import GigCard from "../../components/GigCard/GigCard";
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 import { useLocation } from "react-router-dom";
+import down from "../../img/down.png"
 
 function Gigs() {
   const [sort, setSort] = useState("sales");
@@ -60,7 +61,7 @@ function Gigs() {
             <span className="sortType">
               {sort === "sales" ? "Best Selling" : "Newest"}
             </span>
-            <img src="./img/down.png" alt="" onClick={() => setOpen(!open)} />
+            <img src={down} alt="" onClick={() => setOpen(!open)} />
             {open && (
               <div className="rightMenu">
                 {sort === "sales" ? (

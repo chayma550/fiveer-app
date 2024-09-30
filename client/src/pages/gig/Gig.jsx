@@ -5,6 +5,10 @@ import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 import { Link, useParams } from 'react-router-dom';
 import Reviews from '../../components/Reviews/Reviews';
+import star from "../../img/star.png"
+import clock from "../../img/clock.png"
+import recycle from "../../img/recycle.png"
+import greencheck from "../../img/greencheck.png"
 export default function Gig() {
   const{id}=useParams();
   const { isLoading, error, data } = useQuery({
@@ -53,7 +57,7 @@ export default function Gig() {
             {!isNaN (data.totalStars/data.starNumber)&&(
             <div className="stars">
               {Array(Math.round(data.totalStars/data.starNumber)).fill().map((item,i)=>(
-             <img src="/img/star.png" alt="" key={i}/>
+             <img src={star} alt="" key={i}/>
               ))}
               <span>{ Math.round(data.totalStars/data.starNumber)}</span>
             </div>
@@ -81,7 +85,7 @@ export default function Gig() {
                 <span>{dataUser.username}</span>
                 <div className="stars">
                 {Array(Math.round(data.totalStars/data.starNumber)).fill().map((item,i)=>(
-             <img src="/img/star.png" alt="" key={i}/>
+             <img src={star} alt="" key={i}/>
               ))}
               <span>{ Math.round(data.totalStars/data.starNumber)}</span>
                 </div>
@@ -129,18 +133,18 @@ export default function Gig() {
           </p>
           <div className="details">
             <div className="item">
-              <img src="/img/clock.png" alt="" />
+              <img src={clock} alt="" />
               <span>{data.deliveryDate} Days Delivery</span>
             </div>
             <div className="item">
-              <img src="/img/recycle.png" alt="" />
+              <img src={recycle} alt="" />
               <span>{data.revisionNumber} Revisions</span>
             </div>
           </div>
           <div className="features">
             {data.features.map((feature)=>(
               <div className="item" key={feature}>
-              <img src="/img/greencheck.png" alt="" />
+              <img src={greencheck} alt="" />
               <span>{feature}</span>
             </div>
             ))}
