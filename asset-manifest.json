@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/fiveer-app/static/css/main.e904da03.css",
-    "main.js": "/fiveer-app/static/js/main.aca67424.js",
+    "main.css": "/fiveer-app/static/css/main.81b671c8.css",
+    "main.js": "/fiveer-app/static/js/main.070846fe.js",
+    "static/media/man.png": "/fiveer-app/static/media/man.d9c39b200b6a0328551a.png",
     "static/media/revicons.eot": "/fiveer-app/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/fiveer-app/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/fiveer-app/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/fiveer-app/index.html",
-    "main.e904da03.css.map": "/fiveer-app/static/css/main.e904da03.css.map",
-    "main.aca67424.js.map": "/fiveer-app/static/js/main.aca67424.js.map"
+    "main.81b671c8.css.map": "/fiveer-app/static/css/main.81b671c8.css.map",
+    "main.070846fe.js.map": "/fiveer-app/static/js/main.070846fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.e904da03.css",
-    "static/js/main.aca67424.js"
+    "static/css/main.81b671c8.css",
+    "static/js/main.070846fe.js"
   ]
 }
