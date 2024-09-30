@@ -1,8 +1,7 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { responsive,cards } from '../../data';
-import CatCard from "../CatCard/CatCard"
+import { responsive } from '../../data';
 import "./slider.scss"
 const Slider = ({children}) => {
    

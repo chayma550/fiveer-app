@@ -6,6 +6,7 @@ import "./home.scss"
 import CatCard from '../../components/CatCard/CatCard'
 import { projects,cards } from '../../data'
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
+import check from "../../img/check.png"
 export default function Home() {
 
   return (
@@ -23,7 +24,7 @@ export default function Home() {
           <div className="item">
             <h1>The best part?Everything.</h1>
             <div className="title">
-              <img src="./img/check.png" alt="" />
+              <img src={check} alt="" />
              <span>The best for every budget</span> 
             </div>
             <p>
@@ -31,7 +32,7 @@ export default function Home() {
               just project-based.
             </p>
             <div className="title">
-              <img src="./img/check.png" alt="" />
+              <img src={check} alt="" />
              <span> Quality work done quickly</span>
             </div>
             <p>
@@ -39,7 +40,7 @@ export default function Home() {
               minutes.
             </p>
             <div className="title">
-              <img src="./img/check.png" alt="" />
+              <img src={check} alt="" />
              <span>Protected payments, every time</span> 
             </div>
             <p>
@@ -47,7 +48,7 @@ export default function Home() {
               until you approve the work.
             </p>
             <div className="title">
-              <img src="./img/check.png" alt="" />
+              <img src={check} alt="" />
               <span>24/7 support</span>
             </div>
             <p>
@@ -70,21 +71,21 @@ export default function Home() {
                 <h1>Advanced solutions and professional talent for businesses</h1>
                 <span className='text'>Fiverr Pro</span>
                 <div className="title">
-                  <img src='./img/check.png' alt=''/>
+                  <img src={check} alt=''/>
                   <p>Access top freelancers and professional business tools for any project</p>
 
                 </div>
 
                 <span>Fiverr Certified</span>
                 <div className="title">
-                  <img src='./img/check.png' alt=''/>
+                  <img src={check} alt=''/>
                   <p>Build your own branded marketplace of certified experts</p>
 
                 </div>
 
                 <span>Fiverr Enterprise</span>
                 <div className="title">
-                  <img src='./img/check.png' alt=''/>
+                  <img src={check} alt=''/>
                   <p>Manage your freelance workforce and onboard additional talent with an end-to-end SaaS solution</p>
 
                 </div>

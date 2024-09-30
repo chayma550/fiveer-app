@@ -1,11 +1,10 @@
 import React from 'react'
 import "./orders.scss"
-import { Link } from 'react-scroll'
 import { useQuery } from '@tanstack/react-query';
 import newRequest from '../../utils/newRequest';
 import { useNavigate } from 'react-router-dom';
 export default function Orders() {
-  const { isLoading, error, data, refetch } = useQuery({
+  const { isLoading, error, data } = useQuery({
     queryKey: ["orders"],
     queryFn: () =>
       newRequest

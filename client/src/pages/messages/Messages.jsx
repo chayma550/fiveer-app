@@ -1,6 +1,6 @@
 import React from 'react'
 import "./messages.scss"
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import newRequest from '../../utils/newRequest';
 import moment from 'moment';
@@ -8,7 +8,7 @@ export default function Messages() {
   const currentUser=JSON.parse(localStorage.getItem("currentUser"))
   const queryClient = useQueryClient()
 
-  const { isLoading, error, data, refetch } = useQuery({
+  const { isLoading, error, data} = useQuery({
     queryKey: ["conversations"],
     queryFn: () =>
       newRequest

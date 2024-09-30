@@ -1,4 +1,4 @@
-import React, { useState,useRef } from 'react'
+import React from 'react'
 import "./myGigs.scss"
 import { Link } from 'react-router-dom'
 import getCurrentUser from '../../utils/getCurrentUser'

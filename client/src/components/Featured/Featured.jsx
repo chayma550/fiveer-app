@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import "./featured.scss"
 import { useNavigate } from 'react-router-dom'
+import man from "../../img/man.png"
+import search from "../../img/search.png"
 export default function Featured() {
   const[input,setInput]=useState("")
   const navigate=useNavigate()
@@ -17,7 +19,7 @@ const handleSubmit=()=>{
             <h1>Find the perfect <i>freelance </i>services for your business</h1>
               <div className="search">
               <div className="searchInput">
-                <img src="/img/search.png" alt='search'/>
+                <img src={search} alt='search'/>
                 <input type='text' placeholder='Try "building mobile app"' onChange={e=>setInput(e.target.value)} />
               </div>
               <button className='search_btn' onClick={handleSubmit}>Search</button>
@@ -31,7 +33,7 @@ const handleSubmit=()=>{
               </div>
             </div>
             <div className="right">
-                <img src='/img/man.png' alt='man'/>
+                <img src={man} alt='man'/>
             </div>
         </div>
     </div>

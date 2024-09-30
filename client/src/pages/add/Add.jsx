@@ -3,7 +3,6 @@ import "./add.scss"
 import { gigReducer,INITIAL_STATE } from '../../components/Reducers/gigReducer'
 import upload from '../../utils/upload'
 import newRequest from "../../utils/newRequest"
-import { useNavigate } from 'react-router-dom'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 const Add=()=> {
   const [state,dispatch]=useReducer(gigReducer,INITIAL_STATE)
@@ -36,7 +35,6 @@ const Add=()=> {
    }
   }
 
-  const navigate = useNavigate();
 
   const queryClient = useQueryClient();
 
