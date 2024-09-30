@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./login.scss"
 import newRequest from '../../utils/newRequest'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function Login() {
 
@@ -45,6 +45,9 @@ export default function Login() {
       />
       <button type="submit" >Login</button>
       {error && error}
+      <Link to="/register">
+              <button type="button" className="create-profile">Create profile</button>
+            </Link>
      </form>
   </div>
   )
