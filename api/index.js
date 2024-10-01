@@ -29,10 +29,8 @@ const corsOptions = {
     origin: process.env.FRONTEND_URL || "http://localhost:3000", // Allow requests from your frontend
     credentials: true,
 };
-app.use(cors({
-    origin: ['http://localhost:3000', 'https://fiveer-app.netlify.app'], // Allow both origins
-    credentials: true, // Allow cookies to be sent with requests
-  }));
+app.use(cors(corsOptions)); // This line was missing
+
 app.use(cookieParser());
 
 // Routes
